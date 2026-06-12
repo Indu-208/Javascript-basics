@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<input type="text" id="name">
+
+<button onclick="displayName()">
+    Submit
+</button>
+
+<p id="result"></p>
+
+<script>
+function displayName(){
+    let name = document.getElementById("name").value;
+
+    document.getElementById("result").innerHTML =
+    "Hello " + name;
+}
+</script>
+
+</body>
+</html>
