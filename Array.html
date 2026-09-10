@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Array Elements</title>
+</head>
+<body>
+<h2>Display Array Elements</h2>
+<button onclick="displayArray()">Display</button>
+<p id="result"></p>
+<script>
+function displayArray() {
+    let students = ["Indu", "Anjali", "Priya", "Kavya", "Sneha"];
+    document.getElementById("result").innerHTML =
+        students.join("<br>");
+}
+</script>
+</body>
+</html>
