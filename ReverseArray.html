@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reverse Array</title>
+</head>
+<body>
+<h2>Reverse an Array</h2>
+<button onclick="reverseArray()">Reverse</button>
+<p id="result"></p>
+<script>
+function reverseArray() {
+    let numbers = [10, 20, 30, 40, 50];
+    numbers.reverse();
+    document.getElementById("result").innerHTML =
+        numbers.join(" ");
+}
+</script>
+</body>
+</html>
