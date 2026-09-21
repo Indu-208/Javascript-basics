@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Area of Circle</title>
+</head>
+<body>
+<h2>Area of a Circle</h2>
+<input type="number" id="radius" placeholder="Enter radius">
+<button onclick="findArea()">Calculate</button>
+<p id="result"></p>
+<script>
+function findArea() {
+    let r = Number(document.getElementById("radius").value);
+    let area = 3.14 * r * r;
+    document.getElementById("result").innerHTML =
+        "Area = " + area;
+}
+</script>
+</body>
+</html>
