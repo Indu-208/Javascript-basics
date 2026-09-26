@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Days to Hours</title>
+</head>
+<body>
+<h2>Convert Days to Hours</h2>
+<input type="number" id="days" placeholder="Enter days">
+<button onclick="convert()">Convert</button>
+<p id="result"></p>
+<script>
+function convert() {
+    let days = Number(document.getElementById("days").value);
+    let hours = days * 24;
+    document.getElementById("result").innerHTML =
+        "Hours = " + hours;
+}
+</script>
+</body>
+</html>
