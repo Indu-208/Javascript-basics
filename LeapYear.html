@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Leap Year</title>
+</head>
+<body>
+<h2>Check Leap Year</h2>
+<input type="number" id="year" placeholder="Enter year">
+<button onclick="checkYear()">Check</button>
+<p id="result"></p>
+<script>
+function checkYear() {
+    let year = Number(document.getElementById("year").value);
+    if (year % 4 == 0) {
+        document.getElementById("result").innerHTML =
+            "Leap Year";
+    } else {
+        document.getElementById("result").innerHTML =
+            "Not a Leap Year";
+    }
+}
+</script>
+</body>
+</html>
